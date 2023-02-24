@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const getTotalTravelExp=()=>{
+            var km=document.getElementById("km").value
+            var cm=document.getElementById("cm").value
+            var fp=document.getElementById("fp").value
+            var totalExp=km/cm*fp
+            document.getElementById("answer").innerHTML=totalExp
+            // console.log(km)
+            // console.log(cm)
+            // console.log(fp)                                                     
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="">plese enter K.M:</label>
+        <input type="number"id="km"><br> <br>         
+        <label for="">plese enter Car Milege:</label>
+        <input type="number"id="cm"><br> <br>
+        <label for="">plese enter Fuel Price:</label>
+        <input type="number"id="fp"><br> <br>
+        <button onclick="getTotalTravelExp()">Submit</button>
+        <h1 id="answer"></h1>
+    </div>
+</body>
+</html>
